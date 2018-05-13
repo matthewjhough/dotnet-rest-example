@@ -31,6 +31,7 @@ namespace MiscREST
                 opt.UseInMemoryDatabase("TodoList"));
             services.AddDbContext<PersonContext>(opt => 
                 opt.UseInMemoryDatabase("People"));
+            // mvc begin
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
